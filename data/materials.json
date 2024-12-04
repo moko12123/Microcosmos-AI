@@ -1,0 +1,191 @@
+[
+    {
+        "nombre": "Oro",
+        "simbolo": "Au",
+        "caracteristicas": {
+            "frecuencia": [2.45, 10.1],
+            "longitud_onda": [500, 800],
+            "fotones": "Moderado"
+        }
+    },
+    {
+        "nombre": "Platino",
+        "simbolo": "Pt",
+        "caracteristicas": {
+            "frecuencia": [1.2, 9.6],
+            "longitud_onda": [600, 900],
+            "fotones": "Alto"
+        }
+    },
+    {
+        "nombre": "Litio",
+        "simbolo": "Li",
+        "caracteristicas": {
+            "frecuencia": [3.1, 11.7],
+            "longitud_onda": [400, 700],
+            "fotones": "Bajo"
+        }
+    },
+    {
+        "nombre": "Cobre",
+        "simbolo": "Cu",
+        "caracteristicas": {
+            "frecuencia": [4.0, 8.0],
+            "longitud_onda": [500, 600],
+            "fotones": "Moderado"
+        }
+    },
+    {
+        "nombre": "Titanio",
+        "simbolo": "Ti",
+        "caracteristicas": {
+            "frecuencia": [5.0, 10.0],
+            "longitud_onda": [600, 800],
+            "fotones": "Alto"
+        }
+    },
+    {
+        "nombre": "Tungsteno",
+        "simbolo": "W",
+        "caracteristicas": {
+            "frecuencia": [3.0, 12.0],
+            "longitud_onda": [400, 700],
+            "fotones": "Bajo"
+        }
+    },
+    {
+        "nombre": "Hierro",
+        "simbolo": "Fe",
+        "caracteristicas": {
+            "frecuencia": [1.5, 8.5],
+            "longitud_onda": [500, 650],
+            "fotones": "Moderado"
+        }
+    },
+    {
+        "nombre": "Níquel",
+        "simbolo": "Ni",
+        "caracteristicas": {
+            "frecuencia": [2.0, 9.0],
+            "longitud_onda": [600, 850],
+            "fotones": "Moderado"
+        }
+    },
+    {
+        "nombre": "Aluminio",
+        "simbolo": "Al",
+        "caracteristicas": {
+            "frecuencia": [4.5, 10.0],
+            "longitud_onda": [600, 750],
+            "fotones": "Bajo"
+        }
+    },
+    {
+        "nombre": "Cobalto",
+        "simbolo": "Co",
+        "caracteristicas": {
+            "frecuencia": [2.5, 9.0],
+            "longitud_onda": [500, 700],
+            "fotones": "Moderado"
+        }
+    },
+    {
+        "nombre": "Silicio",
+        "simbolo": "Si",
+        "caracteristicas": {
+            "frecuencia": [3.5, 11.0],
+            "longitud_onda": [450, 650],
+            "fotones": "Alto"
+        }
+    },
+    {
+        "nombre": "Manganeso",
+        "simbolo": "Mn",
+        "caracteristicas": {
+            "frecuencia": [2.1, 9.5],
+            "longitud_onda": [600, 800],
+            "fotones": "Moderado"
+        }
+    },
+    {
+        "nombre": "Cinc",
+        "simbolo": "Zn",
+        "caracteristicas": {
+            "frecuencia": [2.8, 10.3],
+            "longitud_onda": [500, 750],
+            "fotones": "Moderado"
+        }
+    },
+    {
+        "nombre": "Metano",
+        "simbolo": "CH4",
+        "caracteristicas": {
+            "frecuencia": [1.0, 9.5],
+            "longitud_onda": [500, 700],
+            "fotones": "Bajo"
+        }
+    },
+    {
+        "nombre": "Oxígeno",
+        "simbolo": "O2",
+        "caracteristicas": {
+            "frecuencia": [4.0, 11.0],
+            "longitud_onda": [600, 750],
+            "fotones": "Alto"
+        }
+    },
+    {
+        "nombre": "Helio",
+        "simbolo": "He",
+        "caracteristicas": {
+            "frecuencia": [3.0, 8.5],
+            "longitud_onda": [500, 700],
+            "fotones": "Bajo"
+        }
+    },
+    {
+        "nombre": "Hidrógeno",
+        "simbolo": "H2",
+        "caracteristicas": {
+            "frecuencia": [1.0, 5.0],
+            "longitud_onda": [400, 600],
+            "fotones": "Bajo"
+        }
+    },
+    {
+        "nombre": "Uranio",
+        "simbolo": "U",
+        "caracteristicas": {
+            "frecuencia": [3.5, 10.0],
+            "longitud_onda": [500, 800],
+            "fotones": "Alto"
+        }
+    },
+    {
+        "nombre": "Zirconio",
+        "simbolo": "Zr",
+        "caracteristicas": {
+            "frecuencia": [3.2, 10.5],
+            "longitud_onda": [550, 750],
+            "fotones": "Moderado"
+        }
+    },
+    {
+        "nombre": "Aleación de Acero Inoxidable",
+        "simbolo": "AISI 304",
+        "caracteristicas": {
+            "frecuencia": [4.5, 9.2],
+            "longitud_onda": [600, 800],
+            "fotones": "Moderado"
+        }
+    },
+    {
+        "nombre": "Aleación de Aluminio-Litio",
+        "simbolo": "Al-Li",
+        "caracteristicas": {
+            "frecuencia": [5.0, 11.0],
+            "longitud_onda": [650, 850],
+            "fotones": "Alto"
+        }
+    }
+]
