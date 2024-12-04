@@ -1,29 +1,36 @@
-from utils.data_loader import cargar_datos_json
-from utils.data_preprocessing import preprocesar_datos
-from models.ia_model import IADetector
-from utils.model_evaluation import evaluar_modelo
+# main.py
+from api_utils import obtener_datos_nasa, obtener_datos_skymap
+from model import IADetector
+import json
 
+# Función principal que integra todo
 def main():
-    # Cargar los datos de materiales
-    ruta_archivo = 'data/materials.json'
-    materiales = cargar_datos_json(ruta_archivo)
+    # Obtener datos de la NASA
+    datos_nasa = obtener_datos_nasa()
+    if datos_nasa:
+        print("Datos de NASA obtenidos exitosamente:")
+        print(f"Imagen: {datos_nasa['url']}")
+        print(f"Descripción: {datos_nasa['explanation']}")
+    else:
+        print("No se pudo obtener información de la NASA.")
     
-    # Preprocesar los datos
-    datos_preprocesados = preprocesar_datos(materiales)
+    # Cargar datos de materiales desde JSON
+    with open('data/materials.json', 'r') as f:
+        materiales = json.load(f)
     
-    # Crear y entrenar el modelo
-    modelo_ia = IADetector()
-    X, y = modelo_ia.preparar_datos(datos_preprocesados)
-    modelo_ia.entrenar(X, y)
+    # Integrar los datos de NASA o Skymap en los materiales
+    for material in materiales:
+        if datos_nasa:
+            material['nasa_imagen'] = datos_nasa['url']
+            material['nasa_descripcion'] = datos_nasa['explanation']
     
-    # Evaluar el modelo
-    precision = evaluar_modelo(modelo_ia.modelo, datos_preprocesados)
-    print(f'Precisión del modelo: {precision * 100:.2f}%')
-    
-    # Hacer una predicción
-    nuevas_caracteristicas = [100, 200, 1, 2]  # Ejemplo de características
-    material_predicho = modelo_ia.predecir(nuevas_caracteristicas)
-    print(f'El material predicho es: {material_predicho}')
+    # Crear el modelo IA y preparar los datos
+    ia = IADetector()
+    X, y = ia.preparar_datos(materiales)
+    ia.entrenar(X, y)
 
-if __name__ == '__main__':
+    # Realizar predicciones o análisis con el modelo
+    # Aquí iría la lógica para predecir o aprender de los materiales
+
+if __name__ == "__main__":
     main()
