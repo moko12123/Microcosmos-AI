@@ -1,0 +1,15 @@
+# Space Material AI
+
+Este proyecto de IA tiene como objetivo identificar y predecir materiales en el espacio basados en diversas características, como la radiación, la composición de planetas, y datos de observatorios astronómicos. Utiliza datos de fuentes públicas como la NASA y otros satélites.
+
+## Requisitos
+
+- Python 3.x
+- Dependencias: `requests`, `numpy`, `scikit-learn`, `matplotlib`
+
+## Instalación
+
+Clona este repositorio y ejecuta el siguiente comando para instalar las dependencias:
+
+```bash
+pip install -r requirements.txt
